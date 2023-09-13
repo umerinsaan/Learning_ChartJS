@@ -1,0 +1,19 @@
+.big-container{
+    padding: 1rem 2.5rem;
+    display: flex;
+    
+}
+
+.container{
+    border-radius: 14px;
+    background-color: #2a354d;
+    position: relative;
+    width: 40%;
+    height: 450px;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px 2px blue;
+}
+
+#progress-bars-container{
+    display: none;
+}

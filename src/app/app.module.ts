@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChartsComponent } from './components/charts/charts.component';
+import { NgCircleProgressModule, CircleProgressOptions } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({
+      radius: 100,
+      animationDuration: 1300
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
